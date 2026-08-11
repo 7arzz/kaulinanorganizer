@@ -1,7 +1,10 @@
 'use client';
 import React, { useState } from 'react';
 import styles from './Services.module.css';
-import { X, CheckCircle2, Clock, MapPin, MessageCircle } from 'lucide-react';
+import { 
+  X, CheckCircle2, Clock, MapPin, MessageCircle, 
+  Building2, Target, Tent, Palmtree, Flag, Settings 
+} from 'lucide-react';
 
 export default function Services() {
   const [selectedService, setSelectedService] = useState<any>(null);
@@ -11,7 +14,7 @@ export default function Services() {
       id: 1, 
       title: 'Corporate Gathering', 
       desc: 'Bangun kebersamaan dan komunikasi antar anggota tim melalui gathering perusahaan yang dirancang sesuai kebutuhan.', 
-      icon: '🏢',
+      icon: <Building2 size={40} strokeWidth={1.5} />,
       longDesc: 'Program gathering komprehensif yang dirancang untuk mempererat tali silaturahmi, memecah sekat antar divisi, dan me-refresh pikiran karyawan dari rutinitas kerja sehari-hari.',
       activities: ['Sesi Ice Breaking interaktif', 'Fun Team Games (Low Impact)', 'Gala Dinner / Malam Keakraban', 'Sesi Motivasi & Awarding'],
       included: ['MC & Fasilitator Berpengalaman', 'Peralatan Games & Sound System', 'Dokumentasi (Foto & Video Highlight)', 'Tim Medis P3K'],
@@ -22,7 +25,7 @@ export default function Services() {
       id: 2, 
       title: 'Team Building', 
       desc: 'Program interaktif untuk meningkatkan teamwork, leadership, komunikasi, dan problem solving.', 
-      icon: '🎯',
+      icon: <Target size={40} strokeWidth={1.5} />,
       longDesc: 'Didesain khusus dengan metodologi experiential learning untuk mengasah problem solving, kepemimpinan, dan komunikasi efektif dalam tim di bawah tekanan, namun tetap menyenangkan.',
       activities: ['Psychological Ice Breaking', 'Synergy Games (Medium to High Impact)', 'Trust Building & Leadership Challenge', 'Final Project & De-briefing (Evaluasi)'],
       included: ['Master Game & Trainer Tersertifikasi', 'Alat Peraga Games Eksklusif', 'Sound System Lapangan', 'Dokumentasi & Tim Medis'],
@@ -33,7 +36,7 @@ export default function Services() {
       id: 3, 
       title: 'Outbound', 
       desc: 'Aktivitas outdoor yang menyenangkan sekaligus membangun kekompakan dan kepercayaan dalam tim.', 
-      icon: '🏕️',
+      icon: <Tent size={40} strokeWidth={1.5} />,
       longDesc: 'Petualangan luar ruang yang memacu adrenalin sekaligus membangun kekompakan. Aktivitas fisik yang terukur dipadukan dengan tantangan alam untuk membentuk mental pantang menyerah.',
       activities: ['Paintball / Archery War', 'Rafting / Arung Jeram', 'Flying Fox & High Ropes', 'Offroad / ATV Adventure'],
       included: ['Instruktur Safety Profesional', 'Peralatan Standar Keamanan Tinggi', 'Asuransi Peserta', 'Dokumentasi & Transportasi Lokal'],
@@ -44,7 +47,7 @@ export default function Services() {
       id: 4, 
       title: 'Employee Refreshment', 
       desc: 'Berikan pengalaman baru bagi karyawan untuk meningkatkan energi, engagement, dan semangat kerja.', 
-      icon: '🔋',
+      icon: <Palmtree size={40} strokeWidth={1.5} />,
       longDesc: 'Program santai yang berfokus pada kesejahteraan emosional karyawan (well-being). Tanpa beban fisik berat, murni untuk rekreasi dan mengembalikan energi positif.',
       activities: ['Wellness Session (Yoga/Meditation)', 'Creative Workshop (Art/Cooking Class)', 'City Tour / Wisata Budaya', 'Relaxing Gala Dinner'],
       included: ['Instruktur Spesialis (Yoga/Art)', 'Bahan & Perlengkapan Workshop', 'Akomodasi & Konsumsi Premium', 'Merchandise Khusus'],
@@ -55,7 +58,7 @@ export default function Services() {
       id: 5, 
       title: 'Amazing Race', 
       desc: 'Permainan berbasis tantangan yang menggabungkan strategi, komunikasi, kreativitas, dan kerja sama tim.', 
-      icon: '🏁',
+      icon: <Flag size={40} strokeWidth={1.5} />,
       longDesc: 'Kompetisi seru dalam tim kecil yang harus menyelesaikan berbagai misi di pos-pos rahasia. Membutuhkan kecerdasan, kecepatan, dan kerja sama strategis untuk menjadi pemenang pertama.',
       activities: ['Clue Decoding (Pemecahan Teka-teki)', 'Challenge Posts (Tantangan Fisik & Logika)', 'Treasure Hunt', 'Final Race & Coronation'],
       included: ['Game Master & Fasilitator per Pos', 'Race Kit & Peta Clue Eksklusif', 'Properti Games & Transportasi Lokal', 'Hadiah / Medali untuk Pemenang'],
@@ -66,7 +69,7 @@ export default function Services() {
       id: 6, 
       title: 'Custom Corporate Event', 
       desc: 'Konsep acara dapat disesuaikan dengan objective, jumlah peserta, lokasi, dan kebutuhan perusahaan.', 
-      icon: '⚙️',
+      icon: <Settings size={40} strokeWidth={1.5} />,
       longDesc: 'Anda punya ide spesifik atau masalah unik di perusahaan yang ingin diselesaikan melalui event? Tim konsultan kami siap merancang program eksklusif dari nol hanya untuk Anda.',
       activities: ['Tailor-made Activities (Sesuai Permintaan)', 'Thematic Events (Contoh: Squid Game Theme)', 'CSR (Corporate Social Responsibility) Programs', 'Anniversary / Launching Event'],
       included: ['Dedicated Event Consultant', 'Konseptor & Project Manager', 'Kustomisasi Properti & Dekorasi', 'Laporan Evaluasi Event (Post-Event)'],
