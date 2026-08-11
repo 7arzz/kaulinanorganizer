@@ -24,21 +24,28 @@ export default function Navbar() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
         <div className="w-full max-w-screen-xl mx-auto px-8 xl:px-12 h-16 flex items-center justify-between gap-6">
 
-          {/* Logo + Brand name */}
-          <Link href="/" className="flex items-center gap-3 shrink-0">
-            <Image
-              src="/logo.jpg"
-              alt="Kaulinan Organizer"
-              width={44}
-              height={44}
-              className="h-10 w-10 rounded-full object-contain ring-2 ring-[#B51217]/20"
-              priority
-            />
-            <span className="hidden sm:block text-[13px] font-extrabold text-gray-800 leading-tight tracking-wide">
-              KAULINAN<br />
-              <span className="text-[#B51217]">ORGANIZER</span>
-            </span>
-          </Link>
+          {/* Logo + Brand name + Prototype Badge */}
+          <div className="flex items-center gap-4 shrink-0">
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/logo.jpg"
+                alt="Kaulinan Organizer"
+                width={44}
+                height={44}
+                className="h-10 w-10 rounded-full object-contain ring-2 ring-[#B51217]/20"
+                priority
+              />
+              <span className="hidden sm:block text-[13px] font-extrabold text-gray-800 leading-tight tracking-wide">
+                KAULINAN<br />
+                <span className="text-[#B51217]">ORGANIZER</span>
+              </span>
+            </Link>
+            
+            {/* Prototype Indicator */}
+            <div className="hidden md:flex px-2 py-0.5 bg-gray-50 text-gray-400 rounded text-[9px] font-bold tracking-widest border border-gray-200 uppercase whitespace-nowrap">
+              Prototype by 7arzzStore
+            </div>
+          </div>
 
           {/* Desktop links — each link is its own group; no wrapper-group that could bleed into CTA */}
           <div className="hidden lg:flex items-center gap-5 flex-1 justify-center">
