@@ -1,0 +1,53 @@
+.clients {
+  padding: 4rem 2rem;
+  background-color: var(--white);
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  color: #888;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+}
+
+.logoGrid {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  opacity: 0.6;
+}
+
+.logoBox {
+  width: 120px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.logoPlaceholder {
+  font-weight: bold;
+  color: #CCC;
+}
+
+.logoBox:hover {
+  background-color: var(--light-gray);
+  transform: scale(1.05);
+}
+
+.logoGrid:hover .logoBox:not(:hover) {
+  opacity: 0.5;
+}

@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #B51217;
+  --color-deep-red: #7F0B0F;
+  --color-bright-red: #D71920;
+  --color-dark: #111111;
+  --color-dark-gray: #1F1F1F;
+  --color-light-gray: #F5F5F5;
+  --color-gold: #D4A72C;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-red: #B51217;
+  --deep-red: #7F0B0F;
+  --bright-red: #D71920;
+  --dark: #111111;
+  --dark-gray: #1F1F1F;
+  --white: #FFFFFF;
+  --light-gray: #F5F5F5;
+  --gold-accent: #D4A72C;
+  --background: var(--light-gray);
+  --foreground: var(--dark-gray);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--white);
+  color: var(--dark);
+  font-family: var(--font-sans), sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
 }
