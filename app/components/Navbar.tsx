@@ -40,29 +40,33 @@ export default function Navbar() {
             </span>
           </Link>
 
-          {/* Desktop links */}
+          {/* Desktop links — each link is its own group; no wrapper-group that could bleed into CTA */}
           <div className="hidden lg:flex items-center gap-5 flex-1 justify-center">
             {links.map(l => (
               <Link
                 key={l.href}
                 href={l.href}
-                className="text-[13px] font-semibold text-gray-600 hover:text-[#B51217] transition-colors duration-200 whitespace-nowrap relative group"
+                className="group relative text-[13px] font-semibold text-gray-600 hover:text-[#B51217] transition-colors duration-200 whitespace-nowrap py-1"
               >
                 {l.label}
-                <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-[#B51217] group-hover:w-full transition-all duration-300 rounded-full" />
+                {/* underline scoped only inside this individual Link */}
+                <span
+                  aria-hidden="true"
+                  className="absolute bottom-0 left-0 h-[2px] w-0 rounded-full bg-[#B51217] transition-[width] duration-300 group-hover:w-full"
+                />
               </Link>
             ))}
           </div>
 
-          {/* Desktop CTA */}
+          {/* Desktop CTA — sibling to nav links, no shared group context */}
           <a
             href="https://wa.me/6281384071500"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden lg:inline-flex items-center gap-2 bg-[#B51217] text-white px-5 py-2.5 rounded-full text-[13px] font-bold shrink-0 transition-all duration-300 hover:bg-[#8f0e13] hover:shadow-[0_4px_20px_rgba(181,18,23,0.4)] hover:-translate-y-0.5 active:translate-y-0 shadow-[0_2px_10px_rgba(181,18,23,0.25)]"
+            className="hidden lg:inline-flex items-center gap-2 bg-[#B51217] hover:bg-[#8f0e13] text-white font-bold text-[13px] whitespace-nowrap shrink-0 rounded-full px-5 py-[9px] shadow-[0_2px_10px_rgba(181,18,23,0.25)] hover:shadow-[0_4px_20px_rgba(181,18,23,0.4)] hover:-translate-y-px transition-all duration-200 leading-none"
           >
-            <MessageCircle size={15} strokeWidth={2.5} />
-            Konsultasi Gratis
+            <MessageCircle size={15} strokeWidth={2.5} className="shrink-0" />
+            <span>Konsultasi Gratis</span>
           </a>
 
           {/* Hamburger */}

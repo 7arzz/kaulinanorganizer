@@ -22,10 +22,10 @@ export default function Footer() {
   return (
     <footer className="bg-[#111] text-[#B0B0B0]">
       {/* Main grid */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-16 pb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-16 pb-28 sm:pb-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 lg:gap-x-8">
 
-        {/* Brand column — spans 2 cols on md so it doesn't feel squashed */}
-        <div className="md:col-span-2 lg:col-span-1">
+        {/* Brand column */}
+        <div className="sm:col-span-2 lg:col-span-1">
           <div className="flex items-center gap-3 mb-5">
             <Image
               src="/logo.jpg"
@@ -39,7 +39,7 @@ export default function Footer() {
               <span className="text-[#B51217]">ORGANIZER</span>
             </div>
           </div>
-          <p className="text-sm leading-relaxed mb-6 max-w-xs">
+          <p className="text-sm leading-relaxed mb-6 max-w-sm">
             Partner strategis perusahaan Anda dalam merancang program team building, gathering, outbound, dan event korporat yang bermakna.
           </p>
           {/* Contact info */}

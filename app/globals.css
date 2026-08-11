@@ -27,24 +27,22 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: var(--white);
-  color: var(--dark);
-  font-family: var(--font-sans), sans-serif;
-  line-height: 1.6;
-  overflow-x: hidden;
+@layer base {
+  body {
+    background-color: var(--white);
+    color: var(--dark);
+    font-family: var(--font-sans), sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
 }
 
 
 
-button {
-  cursor: pointer;
-  border: none;
-  background: none;
+@layer base {
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
 }
