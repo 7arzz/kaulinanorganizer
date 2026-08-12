@@ -94,6 +94,7 @@ export default function Services() {
               <h3 className={styles.cardTitle}>{service.title}</h3>
               <p className={styles.cardDesc}>{service.desc}</p>
               <button 
+                suppressHydrationWarning
                 onClick={() => setSelectedService(service)}
                 className={styles.detailBtn}
               >

@@ -66,11 +66,11 @@ ${formData.message}`;
           <h3 className={styles.formTitle}>Kirim Permintaan Penawaran</h3>
           <form onSubmit={handleSubmit} className={styles.form}>
             <div className={styles.inputRow}>
-              <input type="text" name="nama" placeholder="Nama Lengkap" required onChange={handleChange} className={styles.input} />
-              <input type="number" name="pax" placeholder="Estimasi Jumlah Peserta" required onChange={handleChange} className={styles.input} />
+              <input suppressHydrationWarning type="text" name="nama" placeholder="Nama Lengkap" required onChange={handleChange} className={styles.input} />
+              <input suppressHydrationWarning type="number" name="pax" placeholder="Estimasi Jumlah Peserta" required onChange={handleChange} className={styles.input} />
             </div>
             <div className={styles.inputRow}>
-              <select name="program" required onChange={handleChange} className={styles.input}>
+              <select suppressHydrationWarning name="program" required onChange={handleChange} className={styles.input}>
                 <option value="">Pilih Jenis Program</option>
                 <option value="Corporate Gathering">Corporate Gathering</option>
                 <option value="Team Building">Team Building</option>
@@ -79,11 +79,11 @@ ${formData.message}`;
                 <option value="Employee Refreshment">Employee Refreshment</option>
                 <option value="Custom Event">Custom Event</option>
               </select>
-              <input type="date" name="date" required onChange={handleChange} className={styles.input} />
+              <input suppressHydrationWarning type="date" name="date" required onChange={handleChange} className={styles.input} />
             </div>
-            <input type="text" name="location" placeholder="Rencana Lokasi (cth: Puncak, Bandung, dsb)" required onChange={handleChange} className={styles.input} />
-            <textarea name="message" placeholder="Pesan Tambahan (Opsional)" rows={4} onChange={handleChange} className={styles.textarea}></textarea>
-            <button type="submit" className={styles.submitBtn}>Kirim Permintaan (via WA)</button>
+            <input suppressHydrationWarning type="text" name="location" placeholder="Rencana Lokasi (cth: Puncak, Bandung, dsb)" required onChange={handleChange} className={styles.input} />
+            <textarea suppressHydrationWarning name="message" placeholder="Pesan Tambahan (Opsional)" rows={4} onChange={handleChange} className={styles.textarea}></textarea>
+            <button suppressHydrationWarning type="submit" className={styles.submitBtn}>Kirim Permintaan (via WA)</button>
           </form>
         </div>
       </div>

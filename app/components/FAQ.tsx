@@ -30,7 +30,7 @@ export default function FAQ() {
         <div className={styles.accordion}>
           {faqs.map((faq, idx) => (
             <div key={idx} className={`${styles.faqItem} ${activeIndex === idx ? styles.active : ''}`}>
-              <button className={styles.question} onClick={() => toggleFaq(idx)}>
+              <button suppressHydrationWarning className={styles.question} onClick={() => toggleFaq(idx)}>
                 <span>{faq.q}</span>
                 <span className={styles.toggleIcon}>{activeIndex === idx ? '-' : '+'}</span>
               </button>

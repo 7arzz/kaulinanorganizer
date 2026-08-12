@@ -19,10 +19,10 @@ export default function Gallery() {
           <div className={styles.titleUnderline}></div>
         </div>
         <div className={styles.filters}>
-          <button className={`${styles.filterBtn} ${styles.active}`}>All</button>
-          <button className={styles.filterBtn}>Gathering</button>
-          <button className={styles.filterBtn}>Team Building</button>
-          <button className={styles.filterBtn}>Outbound</button>
+          <button suppressHydrationWarning className={`${styles.filterBtn} ${styles.active}`}>All</button>
+          <button suppressHydrationWarning className={styles.filterBtn}>Gathering</button>
+          <button suppressHydrationWarning className={styles.filterBtn}>Team Building</button>
+          <button suppressHydrationWarning className={styles.filterBtn}>Outbound</button>
         </div>
         <div className={styles.grid}>
           {images.map((img, idx) => (
