@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { MapPin, Phone, Camera } from 'lucide-react';
-import styles from './ContactSection.module.css';
+import styles from '../css/ContactSection.module.css';
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({

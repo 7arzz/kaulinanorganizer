@@ -1,6 +1,6 @@
 import React from "react";
 import { Check } from "lucide-react";
-import styles from "./Pricing.module.css";
+import styles from "../css/Pricing.module.css";
 
 export default function Pricing() {
   const waMessage = encodeURIComponent(

@@ -1,20 +1,20 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import FloatingWhatsApp from './components/FloatingWhatsApp';
-import Hero from './components/Hero';
-import Statistics from './components/Statistics';
-import AboutSection from './components/AboutSection';
-import Services from './components/Services';
-import Features from './components/Features';
-import Pricing from './components/Pricing';
-import HowItWorks from './components/HowItWorks';
-import Gallery from './components/Gallery';
-import Testimonials from './components/Testimonials';
-import Clients from './components/Clients';
-import FAQ from './components/FAQ';
-import CtaBanner from './components/CtaBanner';
-import ContactSection from './components/ContactSection';
-import Footer from './components/Footer';
+import Navbar from './components/tsx/Navbar';
+import FloatingWhatsApp from './components/tsx/FloatingWhatsApp';
+import Hero from './components/tsx/Hero';
+import Statistics from './components/tsx/Statistics';
+import AboutSection from './components/tsx/AboutSection';
+import Services from './components/tsx/Services';
+import Features from './components/tsx/Features';
+import Pricing from './components/tsx/Pricing';
+import HowItWorks from './components/tsx/HowItWorks';
+import Gallery from './components/tsx/Gallery';
+import Testimonials from './components/tsx/Testimonials';
+import Clients from './components/tsx/Clients';
+import FAQ from './components/tsx/FAQ';
+import CtaBanner from './components/tsx/CtaBanner';
+import ContactSection from './components/tsx/ContactSection';
+import Footer from './components/tsx/Footer';
 
 export default function Home() {
   return (

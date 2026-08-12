@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Clients.module.css';
+import styles from '../css/Clients.module.css';
 
 export default function Clients() {
   const placeholders = [1, 2, 3, 4, 5, 6];

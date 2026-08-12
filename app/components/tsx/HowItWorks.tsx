@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './HowItWorks.module.css';
+import styles from '../css/HowItWorks.module.css';
 
 export default function HowItWorks() {
   const steps = [

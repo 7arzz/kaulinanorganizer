@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Gallery.module.css';
+import styles from '../css/Gallery.module.css';
 
 export default function Gallery() {
   const images = [

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Check } from 'lucide-react';
-import styles from './Features.module.css';
+import styles from '../css/Features.module.css';
 
 export default function Features() {
   const features = [

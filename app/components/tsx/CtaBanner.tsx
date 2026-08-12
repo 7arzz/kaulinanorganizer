@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './CtaBanner.module.css';
+import styles from '../css/CtaBanner.module.css';
 
 export default function CtaBanner() {
   const waMessage = encodeURIComponent("Halo Kaulinan Organizer, saya ingin konsultasi gratis mengenai kebutuhan event perusahaan saya.");

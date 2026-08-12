@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import styles from './Services.module.css';
+import styles from '../css/Services.module.css';
 import { 
   X, CheckCircle2, Clock, MapPin, MessageCircle, 
   Building2, Target, Tent, Palmtree, Flag, Settings 

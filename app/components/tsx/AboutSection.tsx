@@ -7,7 +7,7 @@ import {
   Building2,
   Handshake,
 } from "lucide-react";
-import styles from "./AboutSection.module.css";
+import styles from "../css/AboutSection.module.css";
 
 export default function AboutSection() {
   return (
